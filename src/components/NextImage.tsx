@@ -8,7 +8,7 @@ type NextImageProps = {
   imgClassName?: string;
   blurClassName?: string;
   className?: string;
-  src?: string;
+  src: string;
   alt: string;
 } & (
   | { width: string | number; height: string | number }
