@@ -7,6 +7,8 @@ import '@/styles/globals.scss';
 
 import StoreProvider from '@/lib/storeProvider';
 
+import Layout from '@/components/layout/Layout';
+
 // import '@/styles/colors.scss';
 const { augmentDocumentWithEmotionCache, withAppEmotionCache } = createEmotionSsrAdvancedApproach({
   key: 'css',
@@ -29,7 +31,9 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
         }}
       >
         <StoreProvider>
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </StoreProvider>
       </motion.div>
     </AnimatePresence>

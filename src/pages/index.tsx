@@ -2,9 +2,6 @@ import * as React from 'react';
 
 import { useAppDispatch, useAppSelector } from '@/lib/hooks';
 
-import Layout from '@/components/layout/Layout';
-import Seo from '@/components/Seo';
-
 import { setTheme } from '@/reducers/ui/ui.reducer';
 
 /**
@@ -26,17 +23,14 @@ const HomePage: React.FC = () => {
   }, [theme]);
 
   return (
-    <Layout>
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
-
+    <>
       <section className="bg-white">
         <div className="layout relative flex py-12 text-center">
           <h1 className="mt-4">Hello!</h1>
           <button onClick={change}>change from {mode}</button>
         </div>
       </section>
-    </Layout>
+    </>
   );
 };
 
