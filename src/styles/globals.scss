@@ -42,30 +42,32 @@
   @font-face {
     font-family: 'Gameria';
     font-style: normal;
-    font-weight: 100 900;
     font-display: optional;
     src: url('/fonts/gameria.woff2') format('woff2');
   }
   @font-face {
     font-family: 'Kemco Pixel';
     font-style: normal;
-    font-weight: 100 900;
     font-display: optional;
     src: url('/fonts/Kemco-Pixel-Bold.ttf') format('truetype');
   }
   @font-face {
-    font-family: 'Revx Nueue Demo';
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 100 900;
     font-display: optional;
-    src: url('/fonts/RevxNeueDemo-Regular.ttf') format('truetype');
+    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
   }
   @font-face {
-    font-family: 'Revx Nueue Demo';
+    font-family: 'Poppins';
     font-style: normal;
-    font-weight: 100 900;
     font-display: optional;
-    src: url('/fonts/RevxNeueDemo-SemiBold.ttf') format('truetype');
+    src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-display: optional;
+    src: url('/fonts/Poppins-Bold.ttf') format('truetype');
   }
 
   .cursor-newtab {
