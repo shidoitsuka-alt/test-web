@@ -29,21 +29,21 @@ const Document = () => {
         />
         <link
           rel="preload"
-          href="/fonts/Poppins-Regular.ttf"
+          href="/fonts/Barlow-Regular.ttf"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/Poppins-SemiBold.ttf"
+          href="/fonts/Barlow-SemiBold.ttf"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
-          href="/fonts/Poppins-Bold.ttf"
+          href="/fonts/Barlow-Bold.ttf"
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"

@@ -52,7 +52,6 @@ export default makeStyles({
     width: '100%',
     height: '100%',
     position: 'relative',
-    // bottom: 0,
     border: `1rem solid ${colors.border.main}`,
     borderRadius: 8,
     borderBottom: 'none',
@@ -70,5 +69,14 @@ export default makeStyles({
     height: '100%',
     width: '100%',
     overflowY: 'scroll',
+  },
+  navbar: {
+    background: colors.primary.main,
+  },
+  navItem: {
+    border: `.3rem solid ${colors.border.light}`,
+    background: colors.primary.main,
+    fontSize: 34,
+    '&.active': {},
   },
 });

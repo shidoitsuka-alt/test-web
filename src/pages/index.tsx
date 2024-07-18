@@ -24,7 +24,31 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <section className="bg-white">
+      <section className="">
+        <div className="layout relative flex py-12 text-center">
+          <h1 className="mt-4">Hello!</h1>
+          <button onClick={change}>change from {mode}</button>
+        </div>
+        <div className="layout relative flex py-12 text-center">
+          <h1 className="mt-4">Hello!</h1>
+          <button onClick={change}>change from {mode}</button>
+        </div>
+        <div className="layout relative flex py-12 text-center">
+          <h1 className="mt-4">Hello!</h1>
+          <button onClick={change}>change from {mode}</button>
+        </div>
+        <div className="layout relative flex py-12 text-center">
+          <h1 className="mt-4">Hello!</h1>
+          <button onClick={change}>change from {mode}</button>
+        </div>
+        <div className="layout relative flex py-12 text-center">
+          <h1 className="mt-4">Hello!</h1>
+          <button onClick={change}>change from {mode}</button>
+        </div>
+        <div className="layout relative flex py-12 text-center">
+          <h1 className="mt-4">Hello!</h1>
+          <button onClick={change}>change from {mode}</button>
+        </div>
         <div className="layout relative flex py-12 text-center">
           <h1 className="mt-4">Hello!</h1>
           <button onClick={change}>change from {mode}</button>

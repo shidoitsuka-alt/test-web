@@ -55,19 +55,19 @@
     font-family: 'Poppins';
     font-style: normal;
     font-display: optional;
-    src: url('/fonts/Poppins-Regular.ttf') format('truetype');
+    src: url('/fonts/Barlow-Regular.ttf') format('truetype');
   }
   @font-face {
-    font-family: 'Poppins';
+    font-family: 'Barlow';
     font-style: normal;
     font-display: optional;
-    src: url('/fonts/Poppins-SemiBold.ttf') format('truetype');
+    src: url('/fonts/Barlow-SemiBold.ttf') format('truetype');
   }
   @font-face {
-    font-family: 'Poppins';
+    font-family: 'Barlow';
     font-style: normal;
     font-display: optional;
-    src: url('/fonts/Poppins-Bold.ttf') format('truetype');
+    src: url('/fonts/Barlow-Bold.ttf') format('truetype');
   }
 
   .cursor-newtab {
@@ -123,6 +123,11 @@
   /* Class to adjust with sticky footer */
   .min-h-main {
     @apply min-h-[calc(100vh-56px)];
+  }
+
+  * {
+    font-family: 'Barlow', sans-serif;
+    // font-weight: 700;
   }
 }
 
