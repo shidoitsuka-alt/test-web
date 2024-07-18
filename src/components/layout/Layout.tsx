@@ -51,7 +51,6 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
   const { classes } = useStyles();
   const [levelProgress, setLevelProgress] = React.useState(0);
   const router = useRouter();
-  console.log(router.asPath);
 
   return (
     <div className="appContainer">

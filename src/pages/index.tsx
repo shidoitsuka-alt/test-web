@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import * as React from 'react';
 
 import { useAppDispatch, useAppSelector } from '@/lib/hooks';
@@ -12,10 +13,10 @@ const HomePage: React.FC = () => {
   const [mode, setMode] = React.useState<'light' | 'dark'>();
   const dispatch = useAppDispatch();
   const { theme } = useAppSelector((state) => state.ui);
+  const router = useRouter();
 
   const change = () => {
     dispatch(setTheme(theme === 'light' ? 'dark' : 'light'));
-    console.log(theme);
   };
 
   React.useEffect(() => {
@@ -24,9 +25,9 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <section className="">
+      <section className="text-white">
         <div className="layout relative flex py-12 text-center">
-          <h1 className="mt-4">Hello!</h1>
+          <h1 className="mt-4">Hello! {router.asPath}</h1>
           <button onClick={change}>change from {mode}</button>
         </div>
         <div className="layout relative flex py-12 text-center">
