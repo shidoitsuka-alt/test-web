@@ -98,7 +98,7 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
                   {MenuItems.map((item) => (
                     <div
                       className={`${classes.navItem} ${
-                        router.asPath === item.path ? 'active origin-bottom scale-125' : ''
+                        router.pathname === item.path ? 'active origin-bottom scale-125' : ''
                       } rounded-lg p-2 shadow-lg`}
                       key={item.path}
                     >
