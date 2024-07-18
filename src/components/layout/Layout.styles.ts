@@ -5,7 +5,7 @@ import { colors } from '@/config/colors';
 export default makeStyles({
   mainBackground: {
     width: '100%',
-    height: '100vh',
+    height: '100dvh',
     position: 'absolute',
     top: 0,
   },
