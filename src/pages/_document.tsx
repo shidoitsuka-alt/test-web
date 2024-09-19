@@ -24,28 +24,28 @@ const Document = () => {
           rel="preload"
           href="/fonts/Kemco-Pixel-Bold.ttf"
           as="font"
-          type="font/woff2"
+          type="font/ttf"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/fonts/Barlow-Regular.ttf"
           as="font"
-          type="font/woff2"
+          type="font/ttf"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/fonts/Barlow-SemiBold.ttf"
           as="font"
-          type="font/woff2"
+          type="font/ttf"
           crossOrigin="anonymous"
         />
         <link
           rel="preload"
           href="/fonts/Barlow-Bold.ttf"
           as="font"
-          type="font/woff2"
+          type="font/ttf"
           crossOrigin="anonymous"
         />
       </Head>

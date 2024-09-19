@@ -13,6 +13,9 @@ export default makeStyles({
     height: '100dvh',
     position: 'relative',
     display: 'grid',
+    overflow: 'hidden',
+    fontFamily: "'Barlow', sans-serif",
+    color: colors.textBlack.main,
   },
   profileContainer: {
     alignSelf: 'end',

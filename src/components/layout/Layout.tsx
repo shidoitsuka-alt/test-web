@@ -1,3 +1,5 @@
+import { AnimatePresence, motion } from 'framer-motion';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import * as React from 'react';
 
@@ -89,21 +91,37 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
                     alt="Forest with sky"
                   />
                 </div>
-                <main className={`${classes.content} pb-28`}>{children}</main>
+                <main className={`${classes.content} pb-28`}>
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={router.asPath}
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      transition={{
+                        ease: 'easeOut',
+                        duration: 0.5,
+                      }}
+                    >
+                      {children}
+                    </motion.div>
+                  </AnimatePresence>
+                </main>
               </div>
             </div>
             <nav className={`${classes.navbar} absolute bottom-0 w-full`}>
               <div className="relative py-6">
                 <div className="absolute bottom-6 grid w-full grid-cols-5 place-items-center">
                   {MenuItems.map((item) => (
-                    <div
+                    <Link
+                      href={item.path}
                       className={`${classes.navItem} ${
                         router.pathname === item.path ? 'active origin-bottom scale-125' : ''
                       } rounded-lg p-2 shadow-lg`}
                       key={item.path}
                     >
                       <item.icon />
-                    </div>
+                    </Link>
                   ))}
                 </div>
               </div>

@@ -52,22 +52,30 @@
     src: url('/fonts/Kemco-Pixel-Bold.ttf') format('truetype');
   }
   @font-face {
-    font-family: 'Poppins';
+    font-family: 'Barlow';
     font-style: normal;
+    font-weight: 400;
     font-display: optional;
     src: url('/fonts/Barlow-Regular.ttf') format('truetype');
   }
   @font-face {
     font-family: 'Barlow';
     font-style: normal;
+    font-weight: 600;
     font-display: optional;
     src: url('/fonts/Barlow-SemiBold.ttf') format('truetype');
   }
   @font-face {
     font-family: 'Barlow';
     font-style: normal;
+    font-weight: 700;
     font-display: optional;
     src: url('/fonts/Barlow-Bold.ttf') format('truetype');
+  }
+
+  * {
+    // font-family: 'Barlow', sans-serif;
+    // font-weight: 700;
   }
 
   .cursor-newtab {
@@ -76,32 +84,32 @@
 
   /* #region  /**=========== Typography =========== */
   .h0 {
-    @apply font-primary text-3xl font-bold md:text-5xl;
+    @apply text-3xl font-bold md:text-5xl;
   }
 
   h1,
   .h1 {
-    @apply font-primary text-2xl font-bold md:text-4xl;
+    @apply text-2xl font-bold md:text-4xl;
   }
 
   h2,
   .h2 {
-    @apply font-primary text-xl font-bold md:text-3xl;
+    @apply text-xl font-bold md:text-3xl;
   }
 
   h3,
   .h3 {
-    @apply font-primary text-lg font-bold md:text-2xl;
+    @apply text-lg font-bold md:text-2xl;
   }
 
   h4,
   .h4 {
-    @apply font-primary text-base font-bold md:text-lg;
+    @apply text-base font-bold md:text-lg;
   }
 
   body,
   .p {
-    @apply font-primary text-sm md:text-base;
+    @apply text-sm md:text-base;
   }
   /* #endregion  /**======== Typography =========== */
 
@@ -113,7 +121,6 @@
 
   .appContainer {
     @apply flex min-h-screen flex-col;
-    font-family: 'Revx Neue Demo', sans-serif;
   }
 
   .bg-dark a.custom-link {
@@ -123,11 +130,6 @@
   /* Class to adjust with sticky footer */
   .min-h-main {
     @apply min-h-[calc(100vh-56px)];
-  }
-
-  * {
-    font-family: 'Barlow', sans-serif;
-    // font-weight: 700;
   }
 }
 
