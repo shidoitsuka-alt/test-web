@@ -5,6 +5,7 @@ import * as React from 'react';
 
 import { Root } from '@/components/layout/Root';
 import ProgressBar from '@/components/progressbar/ProgressBar';
+import Toast from '@/components/toast/Toast';
 
 import useStyles from './Layout.styles';
 
@@ -43,8 +44,8 @@ const MenuItems: MenuItem[] = [
     icon: Mission,
   },
   {
-    path: '/frens',
-    title: 'Frens',
+    path: '/friend',
+    title: 'Friends',
     icon: Frens,
   },
 ];
@@ -58,6 +59,7 @@ const Layout = ({ children }: { children: React.ReactNode }): JSX.Element => {
     <div className="appContainer">
       <Root>
         <div>
+          <Toast />
           <img className={classes.mainBackground} src="/images/root-bg.png" alt="Forest with sky" />
           <main className={classes.masterAppContainer}>
             <div className={classes.profileContainer}>

@@ -24,4 +24,19 @@ export interface Color {
     light: string;
     dark: string;
   };
+  success: {
+    main: string;
+    light: string;
+    dark: string;
+  };
+  error: {
+    main: string;
+    light: string;
+    dark: string;
+  };
+  info: {
+    main: string;
+    light: string;
+    dark: string;
+  };
 }

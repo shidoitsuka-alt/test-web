@@ -21,6 +21,7 @@ import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { ErrorPage } from '@/components/ErrorPage';
 
 import useStyles from './Root.styles';
+import Toast from '@/components/toast/Toast';
 
 function App(props: PropsWithChildren) {
   const lp = useLaunchParams();

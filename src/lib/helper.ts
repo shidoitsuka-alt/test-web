@@ -80,3 +80,16 @@ export function hexOpacity(hexCode: string, opacity: number, removeOpacity?: boo
     return '#000';
   }
 }
+
+export function formatMoney(cur: number | string, decimal = 0): string {
+  const val = typeof cur === 'string' ? parseFloat(cur) : cur;
+  if (val < 0) {
+    return '(' + formatMoney(-val, decimal) + ')';
+  }
+
+  const value = Math.abs(Math.floor(val * Math.pow(10, decimal)));
+  const valueParts = value.toString().split('.');
+  valueParts[0] = valueParts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+  return valueParts.join('.');
+}

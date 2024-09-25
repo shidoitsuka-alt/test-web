@@ -1,0 +1,12 @@
+{
+  "New Typescript Stylesheet": {
+    "prefix": "makestyle",
+    "body": [
+      "import { makeStyles } from '@/lib/helper';",
+      "",
+      "export default makeStyles({",
+      "  $0",
+      "});"
+    ]
+  }
+}

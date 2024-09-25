@@ -20,10 +20,20 @@ export type TypeReducer<T extends keyof (typeof RegisterReducer)[keyof typeof Re
     : (typeof RegisterReducer)[K][T];
 };
 
-const reducer = combineSlices(UIReducer);
+const uiPersistConfig = {
+  key: 'ui',
+  storage,
+  blacklist: ['toast'],
+};
+
+const persistedUIReducer = persistReducer(uiPersistConfig, UIReducer.reducer);
+
+const reducer = combineSlices({
+  ui: persistedUIReducer,
+});
 
 const persistedReducer = persistReducer(
-  { key: 'localNextBoilterplate', version: 1, storage },
+  { key: 'localNextBoilterplate', version: 1, storage, blacklist: ['ui'] },
   reducer
 );
 

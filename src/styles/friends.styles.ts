@@ -15,13 +15,27 @@ export default makeStyles({
     fontFamily: 'Gameria',
     WebkitTextStroke: `1.5px ${colors.textBlack.main}`,
   },
+  card: {
+    width: '100%',
+    backgroundColor: colors.primary.main,
+    border: `.35rem solid ${colors.border.light}`,
+    borderRadius: 8,
+    color: colors.textWhite.main,
+    textAlign: 'center',
+    fontFamily: 'Gameria',
+    WebkitTextStroke: `1.5px ${colors.textBlack.main}`,
+    '& .image': {
+      fontSize: '5rem',
+    },
+  },
   upgradeCardContainer: {
     backgroundColor: colors.primary.main,
     fontWeight: 'lighter',
     border: `.35rem solid ${colors.border.light}`,
     borderRadius: 8,
-    '& .image': {
-      fontSize: '3rem',
+    '& .profilePicture': {
+      background: colors.border.light,
+      color: colors.textWhite.main,
     },
   },
   cardContainerProfit: {
@@ -29,9 +43,6 @@ export default makeStyles({
     color: colors.textWhite.main,
     fontWeight: 500,
     fontSize: 12,
-  },
-  categoryBg: {
-    background: colors.border.light,
   },
   upgradeDetail: {
     borderColor: colors.border.light,
@@ -45,7 +56,7 @@ export default makeStyles({
     color: colors.textBlack.main,
     fontSize: 14,
   },
-  activeCategory: {
+  totalText: {
     color: colors.textWhite.main,
   },
 });

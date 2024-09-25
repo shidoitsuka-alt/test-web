@@ -21,7 +21,7 @@ export default makeStyles({
     border: `.35rem solid ${colors.border.light}`,
     borderRadius: 8,
     '& .image': {
-      fontSize: '3rem',
+      fontSize: '2rem',
     },
   },
   cardContainerProfit: {
