@@ -29,6 +29,13 @@ const Document = () => {
         />
         <link
           rel="preload"
+          href="/fonts/RussoOne-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
           href="/fonts/Barlow-Regular.ttf"
           as="font"
           type="font/ttf"

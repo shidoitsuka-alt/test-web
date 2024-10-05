@@ -8,6 +8,19 @@ import useStyle from '@/styles/mine.styles';
 import Coin from '~/svg/coin.svg';
 import Dirt from '~/svg/dirt.svg';
 
+interface MiningUpgrades {
+  name: string;
+  id: number;
+  items: {
+    name: string;
+    description: string;
+    image: string;
+    cost: number;
+    level: number;
+    pph: number;
+  }[];
+}
+
 export default function MinePage() {
   const { classes } = useStyle();
   const [activeCategory, setActiveCategory] = useState(0);
@@ -30,6 +43,38 @@ export default function MinePage() {
       name: 'More Tree',
       id: 1,
       items: [
+        {
+          name: 'Fertilizer',
+          description: 'Fertilize your plant',
+          image: '',
+          cost: 23423432,
+          level: 0,
+          pph: 486,
+        },
+        {
+          name: 'Fertilizer',
+          description: 'Fertilize your plant',
+          image: '',
+          cost: 23423432,
+          level: 0,
+          pph: 486,
+        },
+        {
+          name: 'Fertilizer',
+          description: 'Fertilize your plant',
+          image: '',
+          cost: 23423432,
+          level: 0,
+          pph: 486,
+        },
+        {
+          name: 'Fertilizer',
+          description: 'Fertilize your plant',
+          image: '',
+          cost: 23423432,
+          level: 0,
+          pph: 486,
+        },
         {
           name: 'Fertilizer',
           description: 'Fertilize your plant',

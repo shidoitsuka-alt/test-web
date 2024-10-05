@@ -9,6 +9,11 @@ export interface Color {
     light: string;
     dark: string;
   };
+  tertiary: {
+    main: string;
+    light: string;
+    dark: string;
+  };
   border: {
     main: string;
     light: string;

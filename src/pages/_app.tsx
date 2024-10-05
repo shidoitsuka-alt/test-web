@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
 import { createEmotionSsrAdvancedApproach } from 'tss-react/next/pagesDir';
 
 import '@/styles/globals.scss';
@@ -14,11 +15,18 @@ const { augmentDocumentWithEmotionCache, withAppEmotionCache } = createEmotionSs
 export { augmentDocumentWithEmotionCache };
 
 const App: React.FC<AppProps> = ({ Component, pageProps }) => {
+  const router = useRouter();
+  const noLayoutPages = ['/landing'];
+  const isNoLayoutPage = noLayoutPages.includes(router.pathname);
   return (
     <StoreProvider>
-      <Layout>
+      {isNoLayoutPage ? (
         <Component {...pageProps} />
-      </Layout>
+      ) : (
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      )}
     </StoreProvider>
   );
 };
