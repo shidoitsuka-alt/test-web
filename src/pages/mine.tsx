@@ -2,7 +2,6 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 import { formatMoney } from '@/lib/helper';
-import { useAppDispatch } from '@/lib/hooks';
 
 import useStyle from '@/styles/mine.styles';
 
@@ -12,7 +11,6 @@ import Dirt from '~/svg/dirt.svg';
 export default function MinePage() {
   const { classes } = useStyle();
   const [activeCategory, setActiveCategory] = useState(0);
-  const dispatch = useAppDispatch();
   const items = [
     {
       name: 'Tree',

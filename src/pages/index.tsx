@@ -30,30 +30,6 @@ const HomePage: React.FC = () => {
           <h1 className="mt-4">Hello! {router.asPath}</h1>
           <button onClick={change}>change from {mode}</button>
         </div>
-        <div className="layout relative flex py-12 text-center">
-          <h1 className="mt-4">Hello!</h1>
-          <button onClick={change}>change from {mode}</button>
-        </div>
-        <div className="layout relative flex py-12 text-center">
-          <h1 className="mt-4">Hello!</h1>
-          <button onClick={change}>change from {mode}</button>
-        </div>
-        <div className="layout relative flex py-12 text-center">
-          <h1 className="mt-4">Hello!</h1>
-          <button onClick={change}>change from {mode}</button>
-        </div>
-        <div className="layout relative flex py-12 text-center">
-          <h1 className="mt-4">Hello!</h1>
-          <button onClick={change}>change from {mode}</button>
-        </div>
-        <div className="layout relative flex py-12 text-center">
-          <h1 className="mt-4">Hello!</h1>
-          <button onClick={change}>change from {mode}</button>
-        </div>
-        <div className="layout relative flex py-12 text-center">
-          <h1 className="mt-4">Hello!</h1>
-          <button onClick={change}>change from {mode}</button>
-        </div>
       </section>
     </>
   );
